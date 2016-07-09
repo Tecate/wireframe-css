@@ -7,11 +7,6 @@ h1 {
   color: #f9f6f2;
   text-shadow: 1px 0px 0 #ccc, 2px 0px 0 #c9c9c9, 3px 0px 0 #bbb, 4px 0px 0 #b9b9b9, 5px 0px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 1px 0 5px rgba(0, 0, 0, 0.1), 2px 0px 3px rgba(0, 0, 0, 0.3), 3px 0px 5px rgba(0, 0, 0, 0.2), 4px 0px 10px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.2), 6px 0px 20px rgba(0, 0, 0, 0.15); }
 
-.title-ss {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px; }
-
 .bg-mask {
   z-index: -1;
   opacity: 0.4;
@@ -22,18 +17,6 @@ h1 {
   left: 0px;
   background: #000; }
 
-@keyframes shadow {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 0.4; } }
-/*
-.title {
-	text-align: center;
-	margin-top: 20px;
-	border-top: 1px solid white;
-}
-*/
 .intro {
   color: #c8c8c8;
   max-width: 600px;
@@ -48,9 +31,5 @@ h1 {
   text-align: center;
   width: 512px;
   height: 256px; }
-
-.section-head {
-  width: 100%;
-  text-align: center; }
 
 /*# sourceMappingURL=example-page.css.map */

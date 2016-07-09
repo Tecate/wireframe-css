@@ -21,16 +21,8 @@ h1 {
                6px 0px 20px rgba(0,0,0,.15);
 }
 
-.title-ss {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
 .bg-mask {
 	z-index: -1;
-//	animation: shadow 10s linear 0s infinite alternate;
-//	-moz-animation: shadow 10s linear 0s infinite alternate;
 	opacity: 0.4;
 	position: fixed;
 	width: 100%;
@@ -40,17 +32,6 @@ h1 {
 	background: #000;
 }
 
-@keyframes shadow {
-	from {opacity: 0;}
-	to {opacity: 0.4;}
-}
-/*
-.title {
-	text-align: center;
-	margin-top: 20px;
-	border-top: 1px solid white;
-}
-*/
 .intro {
 	color: #c8c8c8;
 	max-width: 600px;
@@ -68,8 +49,5 @@ h1 {
 	height: 256px;
 }
 
-.section-head {
-	width: 100%;
-	text-align: center;
-}
+
 

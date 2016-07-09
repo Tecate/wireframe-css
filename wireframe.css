@@ -50,7 +50,8 @@ a:link {
 a:hover {
   border: 1px solid #ffffff;
   margin: 0px;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 a:active {
   text-decoration: none;
@@ -114,10 +115,6 @@ ol {
   width: 100%;
   left: 5%;
   top: 5%;
-        /*
-background: -webkit-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);
-background: -moz-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);
-background: -o-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);*/
   background: repeating-linear-gradient(180deg, #c8c8c8 5px, #c8c8c8 10px, transparent 10px, transparent 20px);
   width: 90%;
   height: 90%;
@@ -159,11 +156,6 @@ background: -o-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-
   background: #c8c8c8;
   opacity: 0.4; }
 
-/*
-.wireframe-list:before { 
-	@include bg-properties;
-	background: repeating-linear-gradient(180deg, $wf-internal-color, $wf-internal-color 30px, transparent 1px, transparent 60px);
-}*/
 .wireframe-diagonal-ltr:before {
   content: "";
   position: absolute;
@@ -296,38 +288,6 @@ form {
   width: 100%;
   height: 400px; }
 
-.wireframe-post {
-  width: 100%;
-  height: 400px; }
-  .wireframe-post .post-split {
-    position: absolute;
-    border: 1px solid #c8c8c8; }
-  .wireframe-post .split-vertical0 {
-    width: 20%;
-    height: 20%;
-    border-width: 0px 1px 1px 0px; }
-  .wireframe-post .split-vertical1 {
-    top: 20%;
-    width: 20%;
-    height: 50%;
-    border-width: 0px 1px 1px 0px; }
-  .wireframe-post .split-vertical2 {
-    top: 70%;
-    width: 20%;
-    height: 30%;
-    border-width: 0px 1px 0px 0px; }
-  .wireframe-post .split-vertical3 {
-    top: 95%;
-    left: 20%;
-    width: 80%;
-    height: 5%;
-    border-width: 1px 0px 0px 0px; }
-  .wireframe-post .split-vertical4 {
-    left: 20%;
-    width: 80%;
-    height: 95%;
-    border-width: 0px 0px 0px 0px; }
-
 .wireframe-article {
   height: 256px;
   width: 512px; }
@@ -432,14 +392,14 @@ form {
   width: 100%;
   border-bottom: 1px solid #ffffff; }
 
-.wireframe-list1 {
-  width: 100%;
-  height: 60px;
-  background: #c8c8c8; }
+.float-right {
+  float: right; }
 
-.wireframe-list2 {
+.float-left {
+  float: left; }
+
+.section-head {
   width: 100%;
-  height: 60px;
-  background: transparent; }
+  text-align: center; }
 
 /*# sourceMappingURL=wireframe.css.map */

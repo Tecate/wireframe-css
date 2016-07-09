@@ -36,7 +36,7 @@ h6 { font: 15px times; }
 p { line-height: 1.6; letter-spacing: 1px; margin: 5px; font: 16px sans-serif; }
 
 a:link    { color: $wf-border-color; margin: 1px; padding: 2px; text-decoration: none;}
-a:hover   { border: 1px solid $wf-border-color; margin: 0px;text-decoration: none;}
+a:hover   { border: 1px solid $wf-border-color; margin: 0px; text-decoration: none; cursor: pointer;}
 a:active  { text-decoration: none; background: rgba(200,200,200,0.4);}
 a:visited { color: $wf-border-color;text-decoration: none;}
 
@@ -91,7 +91,7 @@ ol {list-style-type: decimal;}
 	width: 100%;
 }
 
-.wireframe-crossed:before { //use variables for rgba values https://gist.github.com/karlstolley/3916003
+.wireframe-crossed:before { // use variables for rgba values https://gist.github.com/karlstolley/3916003
 	@include bg-properties;
 	background: // http://stackoverflow.com/questions/18012420/draw-diagonal-lines-in-div-background-with-css
 		 linear-gradient(to top left,
@@ -111,17 +111,14 @@ ol {list-style-type: decimal;}
 .wireframe-text:before {
 	@include bg-properties;
 	left: 5%; // can use fixed gutters with calc
-	top: 5%;/*
-	background: -webkit-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);
-	background: -moz-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);
-	background: -o-repeating-linear-gradient(0deg, $wf-internal-color, $wf-internal-color 10px, transparent 10px, transparent 20px);*/
+	top: 5%;
 	background: repeating-linear-gradient(180deg, $wf-internal-color 5px, $wf-internal-color 10px, transparent 10px, transparent 20px); // last value has to be double the first
 	width: 90%;
 	height: 90%;
 	cursor: text;
 }
 
-.wireframe-dashed { // https://css-tricks.com/why-do-we-have-repeating-linear-gradient-anyway/ fucking voodoo
+.wireframe-dashed { // https://css-tricks.com/why-do-we-have-repeating-linear-gradient-anyway/ 
 	background: repeating-linear-gradient(90deg, $wf-internal-color, $wf-internal-color 0.125em /* lines */, transparent 0.125em, transparent 1.25em /* space between */) 50% no-repeat;
 	background-size: 12.625em /* = 10*1.25em + .125em */ .5em;
 }
@@ -153,11 +150,6 @@ ol {list-style-type: decimal;}
 	background: $wf-internal-color;
 	opacity: 0.4;
 }
-/*
-.wireframe-list:before { 
-	@include bg-properties;
-	background: repeating-linear-gradient(180deg, $wf-internal-color, $wf-internal-color 30px, transparent 1px, transparent 60px);
-}*/
 
 .wireframe-diagonal-ltr:before { 
 	@include bg-properties;
@@ -307,43 +299,6 @@ form {
 	height: 400px;
 }
 
-// DELETE THIS
-.wireframe-post {
-	width: 100%;
-	height: 400px;
-	.post-split {position: absolute; border: 1px solid $wf-internal-color;}
-	.split-vertical0 {
-		width: 20%;
-		height: 20%;
-		border-width: 0px 1px 1px 0px;
-	}
-	.split-vertical1 {
-		top: 20%;
-		width: 20%;
-		height: 50%;
-		border-width: 0px 1px 1px 0px;
-	}
-	.split-vertical2 {
-		top: 70%;
-		width: 20%;
-		height: 30%;
-		border-width: 0px 1px 0px 0px;
-	}
-	.split-vertical3 {
-		top: 95%;
-		left: 20%;
-		width: 80%;
-		height: 5%;
-		border-width: 1px 0px 0px 0px;
-	}
-	.split-vertical4 {
-		left: 20%;
-		width: 80%;
-		height: 95%;
-		border-width: 0px 0px 0px 0px;
-	}
-}
-
 .wireframe-article {
 	height: 256px;
 	width: 512px;
@@ -427,14 +382,12 @@ form {
 	}
 }
 
-// https://css-tricks.com/functional-css-tabs-revisited/
-
 // Lil' Bits
 .full-width { width: 100%; }
 .dynamic-height { min-height: auto; height: auto; }
 .no-border { border: 0px solid $wf-border-color; }
 .wireframe-divider-pad { height: 20px; width: 100%; }
 .wireframe-divider-hr { height: 20px; width: 100%; border-bottom: 1px solid $wf-border-color; }
-
-.wireframe-list1 { width: 100%; height: 60px; background: $wf-internal-color; }
-.wireframe-list2 { width: 100%; height: 60px; background: transparent; }
+.float-right { float: right; }
+.float-left { float: left; }
+.section-head { width: 100%; text-align: center; }
