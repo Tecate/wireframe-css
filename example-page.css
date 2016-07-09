@@ -1,6 +1,13 @@
 @font-face {
   font-family: alte;
   src: url("fonts/AlteHaasGroteskBold.ttf"); }
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 h1 {
   font: 60px alte;
   font-size: 60px;
